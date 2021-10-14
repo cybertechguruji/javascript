@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javascript.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="shortcut icon" href="/img/javascript.png" type="image/x-icon">
+    <script src="jav.js"></script>
+    <script src="prism.js"></script>
+    <title>JavaScript Cheatsheets - CyberTech Guruji</title>
+</head>
+<body>
+    <h1 class="heading">JavaScript CheatSheet</h1>
+    <main class="main">
+        <section class="section">
+            <!-- variable  -->
+            <button class="btn" onclick="show('Section1');">JavaScript Variable</button>
+            <Article class="article" id="Section1">
+                <h3 class="title">Variables are containers for storing data (values).</h3>
+                <h3 class="title">Creating Array</h3>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">var variable_name = // Global Scope and can be Redeclare and Reassign many times</code></pre>
+                <pre><code class="language-js">let variable_name = //only works on block Scope and Cannot be Redeclared but it can reassigned</code></pre>
+                <pre><code class="language-js">const variable_name = //only works on block Scope and Cannot be Redeclared and reassigned</code></pre>
+            </Article>
+            <!-- Array  -->
+            <button class="btn" onclick="show('Section2');">Array</button>
+            <Article class="article" id="Section2">
+                <h3 class="title">Array - An array is a special variable, which can hold more than one value at a time.</h3>
+                <h3 class="title">Creating Array</h3>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">const arrayName = [item1, item2, ...];</code></pre>
+                <p class="para"></p>
+                <h3 class="title">Accessing Array</h3>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">let varName = arrayName[index];</code></pre>
+                <h3 class="title">Accessing Array Method</h3>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">let varName = arrayName[index].arrayMethod();</code></pre>
+                <table class="table">
+                    <thead class="thead">
+                        <caption>Array Properties & Method</caption>
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>.length</th>
+                            <td>property returns the number of its elements</td>
+                        </tr>
+                        <tr>
+                            <th>.toString()</th>
+                            <td>converts an array to a string of (comma separated) array values.</td>
+                        </tr>
+                        <tr>
+                            <th>.join()</th>
+                            <td>method also joins all array elements into a string</td>
+                        </tr>
+                        <tr>
+                            <th>.pop()</th>
+                            <td>method removes the last element from an array</td>
+                        </tr>
+                        <tr>
+                            <th>.push()</th>
+                            <td>method adds a new element to an array (at the end):</td>
+                        </tr>
+                        <tr>
+                            <th>.shift()</th>
+                            <td>method removes the first array element and "shifts" all other elements to a lower index.</td>
+                        </tr>
+                        <tr>
+                            <th>.unshift()</th>
+                            <td>method adds a new element to an array (at the beginning), and "unshifts" older elements</td>
+                        </tr>
+                        <tr>
+                            <th>.splice()</th>
+                            <td>method can be used to add new items to an array</td>
+                        </tr>
+                        <tr>
+                            <th>.concat()</th>
+                            <td>method creates a new array by merging (concatenating) existing arrays</td>
+                        </tr>
+                        <tr>
+                            <th>.slice()</th>
+                            <td>method slices out a piece of an array into a new array.</td>
+                        </tr>
+                        <tr>
+                            <th>.sort()</th>
+                            <td>method sorts an array alphabetically</td>
+                        </tr>
+                        <tr>
+                            <th>.reverse()</th>
+                            <td>method reverses the elements in an array.</td>
+                        </tr>
+                        <tr>
+                            <th>.Math.max.apply()</th>
+                            <td>to find the highest number in an array:</td>
+                        </tr>
+                        <tr>
+                            <th>.Math.min.apply()</th>
+                            <td>to find the lowest number in an array</td>
+                        </tr>
+                        <tr>
+                            <th>.forEach()</th>
+                            <td>method calls a function (a callback function) once for each array element.</td>
+                        </tr>
+                        <tr>
+                            <th>.map()</th>
+                            <td>method creates a new array by performing a function on each array element.</td>
+                        </tr>
+                        <tr>
+                            <th>.filter()</th>
+                            <td>method creates a new array with array elements that passes a test.</td>
+                        </tr>
+                        <tr>
+                            <th>.reduce()</th>
+                            <td>method runs a function on each array element to produce (reduce it to) a single value.</td>
+                        </tr>
+                        <tr>
+                            <th>.every()</th>
+                            <td>method check if all array values pass a test.</td>
+                        </tr>
+                        <tr>
+                            <th>.some()</th>
+                            <td>method check if some array values pass a test.</td>
+                        </tr>
+                        <tr>
+                            <th>.indexOf()</th>
+                            <td>method searches an array for an element value and returns its position.</td>
+                        </tr>
+                        <tr>
+                            <th>.lastIndexOf()</th>
+                            <td>returns the position of the last occurrence of the specified element.</td>
+                        </tr>
+                        <tr>
+                            <th>.includes()</th>
+                            <td>This allows us to check if an element is present in an array (including NaN, unlike indexOf).</td>
+                        </tr>
+                        <tr>
+                            <th>.find()</th>
+                            <td>method returns the value of the first array element that passes a test function</td>
+                        </tr>
+                        <tr>
+                            <th>.findIndex()</th>
+                            <td>method returns the index of the first array element that passes a test function.</td>
+                        </tr>
+                        <tr>
+                            <th>.from()</th>
+                            <td>method returns an Array object from any object with a length property or any iterable object.</td>
+                        </tr>
+                        <tr>
+                            <th>Keys()</th>
+                            <td>method returns an Array Iterator object with the keys of an array.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </Article>
+            <!-- Function  -->
+            <button class="btn" onclick="show('Section3');">Function</button>
+            <Article class="article" id="Section3">
+                <h3 class="title">A JavaScript function is a block of code designed to perform a particular task.</h3>
+                <h3 class="title">Creating Function</h3>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">function functionName(param1,para2){
+//Code Code Code
+}</code></pre>
+                <pre><code class="language-js">const varName = (param1,param2)=>{
+//code code code
+}</code></pre>
+                <p class="para"></p>
+                <h3 class="title">Accessing Fuction</h3>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">functionName(paramValue1,paramValue2)</code></pre>
+            </Article>
+            <!-- Events -->
+            <button class="btn" onclick="show('Section4');">Event</button>
+            <Article class="article" id="Section4">
+                <h3 class="title">An HTML event can be something the browser does, or something a user does.</h3>
+                <h3 class="title">Creating Event on HTML Atribute</h3>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-html">&lt;element event='some JavaScript'>&lt;/element></code></pre>
+                <!-- mouse event -->
+                <table>
+                    <thead>
+                        <caption>Mouse Event</caption>
+                        <tr>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>onclick</th>
+                            <td>The event occurs when the user clicks on an element</td>
+                        </tr>
+                        <tr>
+                            <th>oncontextmenu</th>
+                            <td>The event occurs when the user right-clicks on an element to open a context menu</td>
+                        </tr>
+                        <tr>
+                            <th>ondblclick</th>
+                            <td>The event occurs when the user double-clicks on an element</td>
+                        </tr>
+                        <tr>
+                            <th>onmousedown</th>
+                            <td>The event occurs when the user presses a mouse button over an element</td>
+                        </tr>
+                        <tr>
+                            <th>onmouseenter</th>
+                            <td>The event occurs when the pointer is moved onto an element</td>
+                        </tr>
+                        <tr>
+                            <th>onmouseleave</th>
+                            <td>The event occurs when the pointer is moved out of an element</td>
+                        </tr>
+                        <tr>
+                            <th>onmousemove</th>
+                            <td>The event occurs when the pointer is moving while it is over an element</td>
+                        </tr>
+                        <tr>
+                            <th>onmouseout</th>
+                            <td>The event occurs when a user moves the mouse pointer out of an element, or out of one of its children</td>
+                        </tr>
+                        <tr>
+                            <th>onmouseover</th>
+                            <td>The event occurs when the pointer is moved onto an element, or onto one of its children</td>
+                        </tr>
+                        <tr>
+                            <th>onmouseup</th>
+                            <td>The event occurs when a user releases a mouse button over an element</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Clip board event  -->
+                <table>
+                    <thead>
+                        <caption>Clipboard Event</caption>
+                        <tr>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>oncopy</th>
+                            <td>The event occurs when the user copies the content of an element</td>
+                        </tr>
+                        <tr>
+                            <th>oncut</th>
+                            <td>The event occurs when the user cuts the content of an element</td>
+                        </tr>
+                        <tr>
+                            <th>onpaste</th>
+                            <td>The event occurs when the user pastes some content in an element</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- KeyBoard Event -->
+                <table>
+                    <thead>
+                        <caption>Keyboard Event</caption>
+                        <tr>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>onkeydown</th>
+                            <td>The event occurs when the user is pressing a key</td>
+                        </tr>
+                        <tr>
+                            <th>onkeypress</th>
+                            <td>The event occurs when the user presses a key</td>
+                        </tr>
+                        <tr>
+                            <th>onkeyup</th>
+                            <td>The event occurs when the user releases a key</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Drag and Drop Event  -->
+                <table>
+                    <thead>
+                        <caption>Drag and Drop Event</caption>
+                        <tr>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>ondrag</th>
+                            <td>The event occurs when an element is being dragged</td>
+                        </tr>
+                        <tr>
+                            <th>ondragend</th>
+                            <td>The event occurs when the user has finished dragging an element</td>
+                        </tr>
+                        <tr>
+                            <th>ondragenter</th>
+                            <td>The event occurs when the dragged element enters the drop target</td>
+                        </tr>
+                        <tr>
+                            <th>ondragleave</th>
+                            <td>The event occurs when the dragged element leaves the drop target</td>
+                        </tr>
+                        <tr>
+                            <th>ondragover</th>
+                            <td>The event occurs when the dragged element is over the drop target</td>
+                        </tr>
+                        <tr>
+                            <th>ondragstart</th>
+                            <td>The event occurs when the user starts to drag an element</td>
+                        </tr>
+                        <tr>
+                            <th>ondrop</th>
+                            <td>The event occurs when the dragged element is dropped on the drop target</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </Article>
+            <!-- Interval & Timeout-->
+            <button class="btn" onclick="show('Section5');">Interval & Timeout</button>
+            <Article class="article" id="Section5">
+                <!-- setInterval() & clearInterval()-->
+                <h3 class="title">setInterval()</h3>
+                <p class="para">The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds)</p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">const myVar = setInterval(function ()=>{/*code*/}, milliseconds, param1, param2, ...)</code></pre>
+                <h3 class="title">clearInterval()</h3>
+                <p class="para">The clearInterval() method clears a timer set with the setInterval() method.</p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">clearInterval(myVar);</code></pre>
+                <!-- setTimeout() & clearTimeout()-->
+                <h3 class="title">setTimeout()</h3>
+                <p class="para">The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds. The function is only executed once.</p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">const myVar = setTimeout(function ()=>{/*code*/}, milliseconds, param1, param2, ...)</code></pre>
+                <h3 class="title">clearTimeout()</h3>
+                <p class="para">The clearTimeout() method clears a timer set with the setTimeout() method.</p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">clearTimeout(myVar);</code></pre>
+
+            </Article>
+            <!--Condition  -->
+            <button class="btn" onclick="show('Section6');">Condition</button>
+            <Article class="article" id="Section6">
+                <h3 class="title">Conditional statements are used to perform different actions based on different conditions.</h3>
+                <!-- if-else  -->
+                <h3 class="title">if-else</h3>
+                <p class="para">if statement to specify a block of JavaScript code to be executed if a condition is true.</p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">if (condition) {
+//  block of code to be executed if the condition is true
+}else{
+//  block of code to be executed if the condition is false  
+}</code></pre>
+                <!-- else-if  -->
+                <h3 class="title">else-if</h3>
+                <p class="para">Use the else if statement to specify a new condition if the first condition is false.</p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">if (condition1) {
+//  block of code to be executed if condition1 is true
+} else if (condition2) {
+//  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+//  block of code to be executed if the condition1 is false and condition2 is false
+}</code></pre>
+                <!-- switch -->
+                <h3 class="title">switch</h3>
+                <p class="para">The switch statement is used to perform different actions based on different conditions.</p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js">switch(expression) {
+case x:
+// code block
+break; //will stop if expression meet case
+case y:
+// code block
+break;
+default:
+// code block
+}</code></pre>
+            </Article>
+            <!-- Loops -->
+            <button class="btn" onclick="show('Section7');">Loops</button>
+            <Article class="article" id="Section7">
+                <h3 class="title">Variables are containers for storing data (values).</h3>
+                <!-- while loop  -->
+                <h3 class="title">while</h3>
+                <p class="para"></p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js"></code></pre>
+                <!-- do while loops  -->
+                <h3 class="title">do</h3>
+                <p class="para"></p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js"></code></pre>
+                <!-- for loops  -->
+                <h3 class="title">for</h3>
+                <p class="para"></p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js"></code></pre>
+            </Article>
+            <!--  -->
+            <button class="btn" onclick="show('Section8');">Loops</button>
+            <Article class="article" id="Section8">
+                <h3 class="title">Variables are containers for storing data (values).</h3>
+                <!-- while loop  -->
+                <h3 class="title">while</h3>
+                <p class="para"></p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js"></code></pre>
+                <!-- do while loops  -->
+                <h3 class="title">do</h3>
+                <p class="para"></p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js"></code></pre>
+                <!-- for loops  -->
+                <h3 class="title">for</h3>
+                <p class="para"></p>
+                <p class="para-syntex">Syntex</p>
+                <pre><code class="language-js"></code></pre>
+            </Article>
+        </section>
+    </main>
+</html>

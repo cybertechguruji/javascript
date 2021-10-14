@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{padding: 0;margin: 0;}
+body{
+    background-color: lightblue;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+.heading{
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 10px;
+}
+.main{
+    /* display: grid; */
+}
+.section{
+    display: grid;
+}
+.btn{
+    width: 95vw;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.692);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+.btn:hover{
+    background-color: white;
+}
+.article{
+    margin: 10px;
+    padding: 10px;
+    width: 95vw;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+}
+.title{
+    margin: 10px 0 10px 0;
+}
+.para-syntex{
+    margin: 5px;
+    color: blue;
+    font-style: italic;
+    font-weight: 600;
+}
+.para{
+    margin: 5px;
+}
+table{
+    text-align: left;
+    margin: 20px auto;
+}
+caption{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+tr td,tr th{
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
